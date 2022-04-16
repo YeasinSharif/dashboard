@@ -1,0 +1,157 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+
+}
+
+:root {
+    --secondary-clr: #353535;
+    --text-clr: #fff;
+    --hlt_clr: #ffca36;
+    --transition-fast: all linear 0.3s;
+    --transition-medium: all linear 0.4s;
+    --transition-slow: all linear 0.5s;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* common css */
+
+.side-bar {
+    width: 250px !important;
+    height: 100vh !important;
+    transition: var(--transition-fast);
+    background-color: bisque;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.main-content {
+    background-color: var(--hlt_clr);
+    width: calc(100% - 250px);
+    margin-left: auto;
+    transition: var(--transition-fast);
+}
+ul#dropdown-list {
+    padding-left: 30px;
+    /*f054*/
+}
+.dropdown-arrow {
+    position: relative;
+}
+.nav-link span {
+    float: right;
+    transition: all linear 0.4s;
+}
+.nav-arrow.active {
+    transform: rotate(88deg);
+}
+.nav-arrow2.active {
+    transform: rotate(88deg);
+}
+.nav-link {
+    color: #353535;
+}
+.nav-link:focus {
+    color: #353535;
+}
+.side-bar.active {
+    margin-left: -250px;
+}
+.main-content.active {
+    width: 100%;
+}
+.toggle-btn {
+    position: fixed;
+    left: 250px;
+    top: 0;
+    transition: var(--transition-fast);
+}
+.toggle-btn.active {
+    left: 0;
+}
+.main-content p {
+    padding-top: 50px;
+}
+@media (max-width:991px) {
+    .side-bar {
+        margin-left: -250px;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .toggle-btn {
+        left: 0;
+    }
+    .side-bar.active {
+        margin-left: 0;
+    }
+    .main-content.active {
+        width: calc(100% - 250px);
+    }
+    .toggle-btn.active {
+        left: 250px;
+    }
+    
+
+}
+.megamenu  {
+    width: 100%;
+}
+.megamenu ul {
+    width: 100%;
+}
+.mega-div h4 {
+    border-bottom: 1px solid black;
+}
+.mega-div {
+    text-align: center;
+}
